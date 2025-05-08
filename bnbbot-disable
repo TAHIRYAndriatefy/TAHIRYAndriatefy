@@ -1,0 +1,2 @@
+sed -i '/bnbbot/d' ~/.bashrc
+echo "[✓] Auto-lancement désactivé."

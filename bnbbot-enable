@@ -1,0 +1,6 @@
+if ! grep -Fxq "bnbbot" ~/.bashrc; then
+  echo "bnbbot" >> ~/.bashrc
+  echo "[✓] Auto-lancement activé."
+else
+  echo "[!] Auto-lancement déjà actif."
+fi
