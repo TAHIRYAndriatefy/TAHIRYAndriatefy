@@ -1,2 +1,9 @@
-sed -i '/bnbbot/d' ~/.bashrc
-echo "[✓] Auto-lancement désactivé."
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Créer le fichier STOP pour arrêter le bot en cours
+touch $HOME/TS-tasks/STOP
+echo "[✓] Le bot s'arrêtera automatiquement."
+
+# Supprimer la ligne de démarrage automatique
+sed -i '/cd \$HOME\/TS-tasks && python bnb_collector.py/d' ~/.bashrc
+echo "[✓] Le démarrage automatique est désactivé."

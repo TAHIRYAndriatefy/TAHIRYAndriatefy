@@ -1,6 +1,12 @@
-if ! grep -Fxq "bnbbot" ~/.bashrc; then
-  echo "bnbbot" >> ~/.bashrc
-  echo "[✓] Auto-lancement activé."
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Supprimer STOP s'il existe
+rm -f $HOME/TS-tasks/STOP
+
+# Ajouter démarrage automatique s’il n’existe pas déjà
+if ! grep -q "cd \$HOME/TS-tasks && python bnb_collector.py" ~/.bashrc; then
+    echo 'cd $HOME/TS-tasks && python bnb_collector.py' >> ~/.bashrc
+    echo "[✓] Démarrage automatique activé."
 else
-  echo "[!] Auto-lancement déjà actif."
+    echo "[!] Le démarrage automatique est déjà activé."
 fi
