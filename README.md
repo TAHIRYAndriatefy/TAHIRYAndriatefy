@@ -1,7 +1,6 @@
 ## Hi there 👋
 
-<!--
-**TAHIRYAndriatefy/TAHIRYAndriatefy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**TAHIRYAndriatefy** .
 
 Here are some ideas to get you started:
 
@@ -12,4 +11,4 @@ Here are some ideas to get you started:
 - 💬 Ask me about anything anywhere
 - 😄 Pronouns: brada
 - ⚡ Fun fact: follow me
--->
+
